@@ -1,0 +1,9 @@
+@mixin font-size-em($value, $font-size-basic: $font-size-basic) {
+    font-size: $value * 1px;
+    font-size: em($value, $font-size-basic);
+}
+
+@mixin font-size-rem($value, $font-size-basic: $font-size-basic) {
+    font-size: $value * 1px;
+    font-size: rem($value, $font-size-basic);
+}

@@ -1,0 +1,21 @@
+@mixin retinize ($url, $file-type, $background: transparent, $width: auto, $height: auto, $repeat: no-repeat, $align: center, $position: scroll, $ratio: 2, $suffix: "@2x") {
+    @if $file-type == $svg {
+        background: url($url + "." + $file-type) $repeat $align $position;
+        background-size: $width $height;
+        background-color: $background;
+    } @else {
+        background: url($url + "." + $file-type) $repeat $align $position;
+        background-size: $width $height;
+        background-color: $background;
+
+        @media only screen and (-webkit-min-device-pixel-ratio: $ratio),
+            only screen and (min--moz-device-pixel-ratio: $ratio),
+            only screen and (-o-min-device-pixel-ratio: #{$ratio}/1),
+            only screen and (min-resolution: #{round($ratio*96)}dpi),
+            only screen and (min-resolution: #{$ratio}dppx) {
+            background: url($url + $suffix + "." + $file-type) $repeat $position;
+            background-size: $width $height;
+            background-color: $background;
+        }
+    }
+}

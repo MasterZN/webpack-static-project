@@ -1,0 +1,12 @@
+$facebook: #3B5998;
+$twitter: #55ACEE;
+$gplus: #DD4B39;
+$linkedin: #007BB5;
+
+$social-links: ();
+$social-links: map-merge((
+  "facebook": $facebook,
+  "twitter": $twitter,
+  "gplus": $gplus,
+  "linkedin": $linkedin,
+), $social-links);
