@@ -1,0 +1,15 @@
+[class^='icon-']::before,
+[class*='icon-']::before {
+    @extend %icon;
+}
+
+$icons: (
+        twitter: '\f101',
+        youtube: '\f102'
+);
+
+@each $name, $glyph in $icons {
+    .icon-#{$name}:before {
+        content: $glyph;
+    }
+}

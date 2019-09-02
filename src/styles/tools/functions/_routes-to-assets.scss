@@ -1,0 +1,6 @@
+@function is-integration-route($route, $integration: false) {
+    @if $integration == true {
+        @return $route;
+    }
+    @return '../assets' + $route;
+}

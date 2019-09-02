@@ -1,0 +1,17 @@
+@mixin font-weight($value) {
+    @if $local-font == false {
+        font-weight: $value;
+    } @else {
+        font-weight: normal;
+
+        @if $value == 700 {
+            font-family: $font-bold;
+        }
+        @if $value == 600 {
+            font-family: $font-semibold;
+        }
+        @else {
+            font-family: $font-regular;
+        }
+    }
+}

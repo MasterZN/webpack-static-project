@@ -4,6 +4,7 @@
   "description": "Webpack starter for simple web",
   "private": true,
   "scripts": {
+    "build": "webpack --color -p",
     "dev-build": "webpack --watch",
     "dev-server": "webpack-dev-server --open --color --progress",
     "start": "npm-run-all --parallel dev-build dev-server"
@@ -20,7 +21,6 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "bootstrap": "^4.1.3",
     "clean-webpack-plugin": "^0.1.19",
     "copy-webpack-plugin": "^4.5.4",
     "css-loader": "^1.0.1",
@@ -38,5 +38,10 @@
     "webpack-dev-server": "^3.1.10",
     "webpack-merge": "^4.1.4"
   },
-  "dependencies": {}
+  "dependencies": {
+    "bootstrap": "~4.3.1",
+    "jquery": "^3.4.1",
+    "jquery-ui": "^1.12.1",
+    "popper.js": "^1.15.0"
+  }
 }

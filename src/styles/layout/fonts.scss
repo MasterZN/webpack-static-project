@@ -1,0 +1,5 @@
+@import url($open-sans-google-font);
+
+// @include font-face($font-bold, '#{$url-fonts}/opensans_bold/OpenSans-Bold-webfont');
+// @include font-face($font-regular, '#{$url-fonts}/opensans_regular/OpenSans-Regular-webfont');
+@include font-face($font-icons, $url-icons);

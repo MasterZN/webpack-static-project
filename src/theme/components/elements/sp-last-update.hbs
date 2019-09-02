@@ -1,0 +1,9 @@
+{{#if mobile}}
+    <span class="d-lg-none navbar-text ml-auto mr-2">
+        <small>{{ lastUpdate }}</small>
+    </span>
+{{else}}
+    <span class="d-none d-lg-inline-block navbar-text">
+        Last Update: <strong>{{ lastUpdate }}</strong>
+    </span>
+{{/if}}

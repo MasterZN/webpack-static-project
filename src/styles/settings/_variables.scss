@@ -1,22 +1,27 @@
-//========================================
-// Custom variables
-//========================================
+$integration: false;
 
-// Project name abbreviation for components
 $project: app;
 
-// Routes
-$url-img: '/../assets/img';
-$url-fonts: '/../assets/fonts';
+$url-img: is-integration-route('/img', $integration);
+$url-fonts: is-integration-route('/fonts', $integration);
 
-// Transition
+$local-font: false;
+$font-size-basic: 16;
+$open-sans-google-font: 'https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i';
+
+$font-regular: OpenSans;
+$font-semibold: OpenSansSemibold;
+$font-bold: OpenSansBold;
+
+$font-icons: 'app-icons';
+$url-icons: '#{$url-fonts}/#{$font-icons}/#{$font-icons}';
+
+$font-weight-semibold: 600;
+
 $fast: .15s;
 $medium: .3s;
 $slow: .5s;
 
-// Fonts
-$font-size-basic: 16;
+$circle: 50%;
 
-//========================================
-// Override variables
-//========================================
+$font-family-base: 'Open Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";

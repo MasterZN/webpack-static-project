@@ -1,0 +1,12 @@
+{
+    "pages": [
+        {
+            "name": "guideline",
+            "description": "A guideline of styles and components"
+        },
+        {
+            "name": "common",
+            "description": "Empty page with commons parts"
+        }
+    ]
+}

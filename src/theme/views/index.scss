@@ -1,0 +1,33 @@
+@import '../../styles/base';
+
+section > .row > * {
+    @extend .mb-3;
+}
+
+.btn {
+    width: 100%;
+
+    @include media-breakpoint-up(sm) {
+        width: auto;
+    }
+}
+
+a.card {
+    transition: border-color .15s ease, transform .3s ease;
+
+    .card-title {
+        transition: color .15s ease;
+    }
+
+    @include hover {
+        border-color: $dark;
+        text-decoration: none;
+
+        transform: scale(1.05);
+        z-index: 2;
+
+        .card-title {
+            color: $primary;
+        }
+    }
+}
